@@ -1,0 +1,24 @@
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('MazzardH-Light.eot');
+    src: local('Mazzard H Light'), local('MazzardH-Light'),
+        url('MazzardH-Light.eot?#iefix') format('embedded-opentype'),
+        url('MazzardH-Light.woff2') format('woff2'),
+        url('MazzardH-Light.woff') format('woff'),
+        url('MazzardH-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('MazzardH-SemiBold.eot');
+    src: local('Mazzard H SemiBold'), local('MazzardH-SemiBold'),
+        url('MazzardH-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('MazzardH-SemiBold.woff2') format('woff2'),
+        url('MazzardH-SemiBold.woff') format('woff'),
+        url('MazzardH-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}

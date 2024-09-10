@@ -79,7 +79,7 @@ $table_prefix = 'wp_';
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
-define( 'WP_DEBUG', false );
+// define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
@@ -94,3 +94,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+
+error_reporting(E_ALL); // включаем вывод ошибок
+ini_set('display_errors', 1); // включаем вывод ошибок на экран
+if (!defined('WP_DEBUG')) define('WP_DEBUG', true);
+if (!defined('WP_DEBUG_DISPLAY')) define('WP_DEBUG_DISPLAY', true);
