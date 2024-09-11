@@ -1668,7 +1668,7 @@ main.padding {
   justify-content: space-between;
 }
 
-.about-us__title {
+.about-us__title, .garanties__title {
   width: 100%;
   margin-bottom: 60px;
   position: relative;
@@ -1689,7 +1689,7 @@ main.padding {
 }
 
 .about-us__item.item-1,
-.about-us__item.item-2 {
+.about-us__item.item-2, .garanties__item {
   width: 560px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2215,6 +2215,7 @@ main.padding {
   width: 100%;
   justify-content: space-between;
   align-items: flex-end;
+  margin-top: 30px;
 }
 
 .contact-us__form input {
@@ -2570,6 +2571,7 @@ main.padding {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
 }
 
 .contact-us__form .btn-submit input {
@@ -2998,7 +3000,7 @@ main.padding {
 
 .cooperation-stages__content ol {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 80px;
 }
 
@@ -3054,9 +3056,9 @@ main.padding {
   color: #fff;
 }
 
-.cooperation-stages__content .content__item {
+/* .cooperation-stages__content .content__item {
   width: 313px;
-}
+} */
 
 .cooperation-stages__content .content__item p {
   padding: 56px 0px 0px 32px;
@@ -3065,7 +3067,7 @@ main.padding {
 }
 
 .cooperation-stages__content .content__item.item-1 {
-  width: 269px;
+  /* width: 269px; */
   margin-left: 0;
 }
 
@@ -17299,7 +17301,7 @@ footer hr {
 @media (max-width: 1413px) {
   .contact-us__form .data-processing-checkbox input + span::before {
     position: relative;
-    top: -10px;
+    top: 0px;
   }
 
   main.padding {
@@ -17451,7 +17453,7 @@ footer hr {
     top: 478px;
   }
 
-  .about-us__title {
+  .about-us__title, .garanties__title {
     margin-bottom: 56px;
   }
 
@@ -21353,7 +21355,7 @@ footer hr {
     display: none;
   }
 
-  .about-us__title {
+  .about-us__title, .garanties__title {
     margin-bottom: 62px;
   }
 
@@ -21776,9 +21778,9 @@ footer hr {
     width: 217px;
   }
 
-  .cooperation-stages__content .content__item.item-1 {
+  /* .cooperation-stages__content .content__item.item-1 {
     width: 217px;
-  }
+  } */
 
   .advantages .container {
     min-height: 0px;
@@ -26779,7 +26781,7 @@ footer hr {
     margin-bottom: 30px;
   }
 
-  .about-us__title {
+  .about-us__title, .garanties__title {
     margin-bottom: 41px;
   }
 
@@ -33237,18 +33239,19 @@ p.day__title {
   display: flex;
   align-items: center;
   height: 24px;
+  margin-bottom: 10px;
 }
 .advantage-block__text p {
   margin-right: 40px;
   display: flex;
   width: max-content;
   font-size: 20px;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 .advantage-block__text span {
   color: #d25f15;
   margin: 0 4px;
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 20px;
 }
 
@@ -37467,4 +37470,28 @@ p.day__title {
   .more-interesting .more-interesting__title {
     margin-bottom: 40px;
   }
+}
+
+.ul__stars-light {
+  margin-top: 40px;
+}
+.ul__stars-light li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.ul__stars-light li::before {
+  content: url(../image/star-light.png);
+  position: absolute;
+  display: block;
+  left: 0px;
+  top: -5px;
+}
+.get-free-consult__container .contact-us__form>p {
+  width: 100%;
+}
+.get-free-consult__container .contact-us__form .label {
+  display: block;
+  margin-bottom: 15px;
 }

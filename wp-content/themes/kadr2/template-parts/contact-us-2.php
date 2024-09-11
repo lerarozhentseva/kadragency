@@ -2,7 +2,7 @@
   <div class="container">
     <div class="contact-us-2__item item-1">
       <div class="contact-us__title">
-        <p class='h2'>Свяжитесь с нами</p>
+        <p class='h2'>Оставьте заявку и мы вам перезвоним</p>
         <div class="underline-block block"></div>
       </div>
       <!--
@@ -18,7 +18,7 @@
           </div>
           <div class="item__content">
             <p class="contact">E-mail</p>
-            <a class="text-link" href="mailto:info@hrbel.by">info@hrbel.by</a>
+            <a class="text-link" href="mailto:info@hrbel.by">info@hr.by</a>
           </div>
         </div>
         <div class="text__item item-2">
@@ -28,7 +28,7 @@
           </div>
           <div class="item__content">
             <p class="contact">Телефон</p>
-            <a href="tel:+375445572020" class="text-link">+375 44 557 20 20</a>
+            <a href="tel:+375445572020" class="text-link">+375 (44) 777-29-35</a>
           </div>
         </div>
         <div class="text__item item-3">
@@ -38,7 +38,8 @@
           </div>
           <div class="item__content">
             <p class="contact">Время работы: </p>
-            <p class="contact">Пн.-Пт.: 09:00 - 18:00</p>
+            <p class="contact">Пн.-Пт.: 09:00 - 20:00</p>
+            <p class="contact">Сб.-Вс.: 10:00 - 18:00</p>
           </div>
         </div>
         <div class="text__item item-4">
@@ -48,8 +49,7 @@
           </div>
           <div class="item__content">
             <p class="contact">Адрес</p>
-            <p class="contact"><a class="text-link" href="https://yandex.by/maps/-/CDuynJjt" target="_blank">г.Минск,
-                пр.<wbr>Независимости, д.77</a></p>
+            <p class="contact"><a class="text-link" href="#" target="_blank">г.Минск, пр.Независимости, д.77</a></p>
           </div>
         </div>
       </div>

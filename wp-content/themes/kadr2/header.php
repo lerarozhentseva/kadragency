@@ -20,6 +20,12 @@
   })(window,document,'script','dataLayer','GTM-NNKDH64');</script> -->
   <!-- End Google Tag Manager -->
 
+  <?php if(is_front_page()): ?> 
+    <link rel="preload" as="image" href="<?php echo get_field('slajder-1'); ?>" />
+    <link rel="preload" as="image" href="<?php echo get_field('slajder-2'); ?>" />
+    <link rel="preload" as="image" href="<?php echo get_field('slajder-3'); ?>" /> 
+  <?php endif; ?> 
+
   <?php wp_head(); ?>
 </head>
 
@@ -42,7 +48,7 @@
                 <a href="tel:+375445572020">+375 44 557 20 20</a>
               </div>
               <div class="header-email">
-                <a href="mailto:info@hrbel.by">info@hrbel.by</a>
+                <a href="mailto:info@kadragency.ru">info@kadragency.ru</a>
               </div>
               <div class="header-socials">
                 <a href="https://t.me/kadrhragency" target="_blank" aria-label="VK link">
