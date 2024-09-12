@@ -4,13 +4,13 @@
       <div class="promotion__left">
         <div class="promotion__employees">
           <div class="promotion__employee">
-            <img src="<?= get_template_directory_uri(); ?>/image/promotion/employee-12.png" alt="">
+            <img src="<?= get_template_directory_uri(); ?>/image/promotion/employee1.png" alt="">
           </div>
           <div class="promotion__employee">
-            <img src="<?= get_template_directory_uri(); ?>/image/promotion/employee-2.png" alt="">
+            <img src="<?= get_template_directory_uri(); ?>/image/promotion/employee2.png" alt="">
           </div>
           <div class="promotion__employee">
-            <img src="<?= get_template_directory_uri(); ?>/image/team/mariya-arhipenko.jpg" alt="">
+            <img src="<?= get_template_directory_uri(); ?>/image/promotion/employee3.png" alt="">
           </div>
           <div class="promotion__employee">
             <img src="<?= get_template_directory_uri(); ?>/image/promotion/promotion.svg" alt="">

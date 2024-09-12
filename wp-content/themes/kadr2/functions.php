@@ -129,7 +129,7 @@ function themeslug_enqueue_script()
     wp_enqueue_script('faq-acc', get_template_directory_uri() . '/js/faq-acc.js', false);
   }
 
-  if ($page_id == 354) {
+  if ($page_id == 33) {
     wp_enqueue_style('ionrangeslider', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css', array(), '1.1', 'all');
     wp_enqueue_script('ionrangeslider', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js', false);
 

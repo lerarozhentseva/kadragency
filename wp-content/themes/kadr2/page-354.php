@@ -4,6 +4,7 @@ Template Name: Вакансии
 Template Post Type: page
 */
 ?>
+<?php wp_head(); ?>
 <?php get_header(); ?>
 <main>
   <div class="vacancy-title page-header">
@@ -12,33 +13,11 @@ Template Post Type: page
         <div class="breadcrumbs"><?php if (function_exists('dimox_breadcrumbs'))
           dimox_breadcrumbs(); ?></div>
         <h1>Вакансии</h1>
-        <p>Если для реализации в профессии вы выбрали управление человеческими ресурсами и понимаете, насколько в
-          команде важен вклад каждого, то нам по пути, и вы можете стать сотрудником <strong>HR-агентства</strong>.</p>
-        <p>По нашим прогнозам, пул HR-направленности в стране будет крепнуть, развиваться, расти. Дальше будет только
-          интереснее, разнообразнее, но не проще, а глубже и сложнее. Востребованность кадров растет год от года, а
-          вместе с ней ширится и наш коллектив.</p>
-        <button class="btn btn-position-aware popmake-29" href="#">КОНСУЛЬТАЦИЯ<span
-            class="position-aware"></span></button>
-      </div>
-      <div class="vacancy-title__item page-header__item item-2">
-        <picture>
-          <source srcset="<?= get_template_directory_uri(); ?>/image/vacancy/vacancy-title.webp" type="image/webp">
-          <source srcset="<?= get_template_directory_uri(); ?>/image/vacancy/vacancy-title.jpg" type="image/jpeg">
-          <img src="<?= get_template_directory_uri(); ?>/image/vacancy/vacancy-title.jpg"
-            alt="Удаленная работа из кафе">
-        </picture>
-        <a class="btn btn-position-aware dark smooth-transition" href="#check-out-our-offers"><img
-            src="<?= get_template_directory_uri(); ?>/image/arrow-to-bottom.svg" alt="Белый графический элемент"><span
-            class="position-aware quad"></span></a>
       </div>
     </div>
   </div>
-  <div id="check-out-our-offers" class="check-out-our-offers">
+  <div id="check-out-our-offers" class="check-out-our-offers page-header">
     <div class="container">
-      <div class="check-out-our-offers__title">
-        <h2>Посмотрите наши предложения:</h2>
-        <div class="underline-block"></div>
-      </div>
       <div class="check-out-our-offers__item">
         <form action="" method="POST" id="vacancies_filter">
           <div class="filter-item specialization">

@@ -252,77 +252,228 @@ Template Post Type: page
   <div class="contact-main get-free-consult__container">
     <?php get_template_part('template-parts/contact-us'); ?>
   </div>
-  <?php get_template_part('template-parts/promotion'); ?>
-
   <div class="main-page-vacancy-list">
     <div class="container">
-      <div class="main-page-vacancy-list__title">
-        <h2>Вакансии</h2>
-      </div>
-      <div class="underline-block"></div>
-      <div class="main-page-vacancy-list__vacancy">
-        <?php
-        $args = array(
-          'post_type' => 'vacancies',
-          'post_status' => 'publish',
-          'posts_per_page' => -1
-        );
-        $blog_posts = new WP_Query($args);
-        if ($blog_posts->have_posts()) {
-          while ($blog_posts->have_posts()) {
-            $blog_posts->the_post();
-            $categories = get_the_terms(get_the_ID(), 'branch');
-            $category_data = '';
-            if ($categories) {
-              foreach ($categories as $category) {
-                $category_data .= $category->term_id . ' ';
-              }
-            }
-            ?>
-
-            <div class="vacancy__item" data-category="<?php echo trim($category_data); ?>"
-              onclick="location.href='<?php the_permalink(); ?>';">
-              <a class="item__title" href="<?php the_permalink() ?>">
-                <p><?php the_title() ?></p>
-              </a>
-              <p><?php echo get_post_meta(get_the_ID(), 'organization', true); ?></p>
-              <p class="item__text"><?php the_excerpt(); ?></p>
+        <div class="main-page-vacancy-list__title">
+            <h2>Вакансии</h2>
+        </div>
+        <div class="underline-block"></div>
+        <div class="main-page-vacancy-list__vacancy">
+            <div class="vacancy__item" data-category="" style="display: none;">
+                <a class="item__title" href="#">
+                    <p>Менеджер по продажам (Специалист по продажам)</p>
+                </a>
+                <p>Кадровое агентство Кадр</p>
+                <p class="item__text"></p>
+                <p>Мы ищем специалиста по продажам на полный рабочий день в кадровое агентство «Кадр».</p>
+                <p></p>
             </div>
-          <?php }
-        } else {
-          echo '<p>Извините, вакансий нет</p>';
-        }
-        wp_reset_postdata();
-        ?>
-      </div>
-      <div class="main-page-vacancy-list__category">
-        <p>Категории</p>
-        <hr>
-        <ul>
-          <?php $top = get_term(55, 'branch');
-          echo '<li class="category__button active" data-id="' . intval($top->term_id) . '"><p>' . $top->name . '</p></li>';
-          ?>
-          <?php $categories = get_categories(array('taxonomy' => 'branch', 'hide_empty' => 1, 'exclude' => '55'));
-          foreach ($categories as $category) {
-            echo '<li class="category__button" data-id="' . intval($category->term_id) . '"><p>' . $category->cat_name . '</p></li>';
-            $child_list = get_categories(array('hide_empty' => 1, 'parent' => $category->term_id));
-            if (!empty($child_list)) {
-              echo '<ul class="child_list">';
-              foreach ($child_list as $child) {
-                echo '<li class="category-child__button child" data-id="' . intval($child->term_id) . '"><p>' . $child->cat_name . '</p></li>';
-              }
-              echo '</ul>';
-            }
-          }
-          ?>
-        </ul>
-      </div>
-      <div class="btn">
-        <button class="btn btn-position-aware popmake-29">КОНСУЛЬТАЦИЯ<span class="position-aware"></span></button>
-      </div>
-    </div>
-  </div>
 
+            <div class="vacancy__item" data-category="29" style="display: none;">
+                <a class="item__title" href="#">
+                    <p>HR / рекрутер</p>
+                </a>
+                <p>ООО Кадровое агентство КАДР</p>
+                <p class="item__text"></p>
+                <p>Профессионально агентство «Кадр» осуществляет полный комплекс услуг по подбору и управлению кадрами,
+                    включая HR-брендинг, консалтинг и другие смежные услуги.</p>
+                <p></p>
+            </div>
+
+            <div class="vacancy__item" data-category="52" style="display: none;">
+                <a class="item__title" href="#">
+                    <p>Главный бухгалтер</p>
+                </a>
+                <p>Кадр</p>
+                <p class="item__text"></p>
+                <p>Бухгалтерская компания, которая занимает лидирующие позиции на рынке Беларуси в сфере бухгалтерского
+                    учета, в связи с расширением штата находится в поисках Главного бухгалтера.</p>
+                <p></p>
+            </div>
+
+            <div class="vacancy__item" data-category="40" style="display: none;">
+                <a class="item__title"
+                    href="#">
+                    <p>Специалист по работе с корпоративными клиентами</p>
+                </a>
+                <p>Кадр</p>
+                <p class="item__text"></p>
+                <p>Аутсорсинговая компания — лидером рынка бухгалтерских и юридических услуг находится в поисках
+                    амбициозного и талантливого специалиста по работе с корпоративными клиентами / продажам! Работа
+                    только с входящими звонками!</p>
+                <p></p>
+            </div>
+
+            <div class="vacancy__item" data-category="60" style="display: none;">
+                <a class="item__title" href="#">
+                    <p>Аудитор/Старший аудитор</p>
+                </a>
+                <p>ООО “Аудиторские технологии”</p>
+                <p class="item__text"></p>
+                <p>Компания&nbsp;ООО “Аудиторские технологии”&nbsp;в поисках старшего аудитора/аудитора для проведения
+                    независимых и объективных аудиторских проверок финансовой деятельности наших клиентов.</p>
+                <p></p>
+            </div>
+
+            <div class="vacancy__item" data-category="52" style="display: none;">
+                <a class="item__title" href="#">
+                    <p>Аудитор</p>
+                </a>
+                <p>Аудиторские технологии</p>
+                <p class="item__text"></p>
+                <p>Компания ООО “Аудиторские технологии” в поисках квалифицированного сотрудника для проведения
+                    независимых и объективных аудиторских проверок финансовой деятельности наших клиентов.</p>
+                <p></p>
+            </div>
+
+            <div class="vacancy__item" data-category="40" style="display: none;">
+                <a class="item__title" href="#">
+                    <p>Специалист по продажам</p>
+                </a>
+                <p>ООО Кадровое агентство КАДР</p>
+                <p class="item__text"></p>
+                <p>Аутсорсинговая компания — лидер рынка бухгалтерских и юридических услуг находится в поисках
+                    амбициозного и талантливого специалиста по продажам / специалиста по работе с клиентами! Работа
+                    только с входящими звонками!</p>
+                <p></p>
+            </div>
+
+            <div class="vacancy__item" data-category="35" style="display: none;">
+                <a class="item__title" href="#">
+                    <p>Копирайтер на английском языке</p>
+                </a>
+                <p>BPM Cloud / Web Focus</p>
+                <p class="item__text"></p>
+                <p>BPM Cloud — белорусская аутсорсиноговая и аутстаффинговая IT-компания с центрами разработки в
+                    Беларуси и России. Компания оказывает полный комплекс услуг по разработке, внедрению и сопровождению
+                    программных решений клиентам из более чем 30 стран мира. Более 150 высококвалифицированных
+                    ИТ-специалистов. Реализация ИТ-проектов различной сложности и масштаба.</p>
+                <p></p>
+            </div>
+
+            <div class="vacancy__item" data-category="29" style="display: none;">
+                <a class="item__title" href="#">
+                    <p>Руководитель отдела продаж</p>
+                </a>
+                <p>BPM Cloud / Web Focus</p>
+                <p class="item__text"></p>
+                <p>BPM Cloud — белорусская аутсорсиноговая и аутстаффинговая IT-компания с центрами разработки в
+                    Беларуси и России. Компания оказывает полный комплекс услуг по разработке, внедрению и сопровождению
+                    программных решений клиентам из более чем 30 стран мира. Более 150 высококвалифицированных
+                    ИТ-специалистов. Реализация ИТ-проектов различной сложности и масштаба.</p>
+                <p></p>
+            </div>
+
+            <div class="vacancy__item" data-category="37" style="display: block;">
+                <a class="item__title" href="#">
+                    <p>SMM-менеджер</p>
+                </a>
+                <p>BPM Cloud / Web Focus</p>
+                <p class="item__text"></p>
+                <p>BPM Cloud — белорусская аутсорсиноговая и аутстаффинговая IT-компания с центрами разработки в
+                    Беларуси и России. Компания оказывает полный комплекс услуг по разработке, внедрению и сопровождению
+                    программных решений клиентам из более чем 30 стран мира. Более 150 высококвалифицированных
+                    ИТ-специалистов. Реализация ИТ-проектов различной сложности и масштаба.</p>
+                <p></p>
+            </div>
+
+            <div class="vacancy__item" data-category="40" style="display: none;">
+                <a class="item__title"
+                    href="#">
+                    <p>Менеджер по продажам IT-услуг/Специалист по продажам</p>
+                </a>
+                <p>BPM Cloud / Web Focus</p>
+                <p class="item__text"></p>
+                <p>В международной IT-компании&nbsp;BPM CLOUD&nbsp;открыта вакансия&nbsp;менеджера по продажам. Мы
+                    занимаемся разработкой сайтов и веб-приложений, it-аутсорсингом и it-аутстаффингом. Мы строим
+                    компанию с человеческим лицом и создаем одну из лучших команд, где сотрудники для нас — самая
+                    большая ценность.</p>
+                <p></p>
+            </div>
+
+            <div class="vacancy__item" data-category="37" style="display: block;">
+                <a class="item__title" href="#">
+                    <p>Интернет-маркетолог</p>
+                </a>
+                <p>BPM Cloud / Web Focus</p>
+                <p class="item__text"></p>
+                <p>Ищем маркетолога для работы над несколькими проектами. Задача — выстроить с маркетинг планы проектов,
+                    контролировать и настраивать РК, продвижение сайтов и социальных сетей, анализировать эффективность
+                    расходования рекламных бюджетов.</p>
+                <p></p>
+            </div>
+
+            <div class="vacancy__item" data-category="29" style="display: none;">
+                <a class="item__title"
+                    href="#">
+                    <p>Заместитель директора (управляющего) по персоналу</p>
+                </a>
+                <p>BPM Cloud / Web Focus</p>
+                <p class="item__text"></p>
+                <p>BPM Cloud — белорусская аутсорсиноговая и аутстаффинговая IT-компания с центрами разработки в
+                    Беларуси и России. Компания оказывает полный комплекс услуг по разработке, внедрению и сопровождению
+                    программных решений клиентам из более чем 30 стран мира. Более 150 высококвалифицированных
+                    ИТ-специалистов. Реализация ИТ-проектов различной сложности и масштаба.</p>
+                <p></p>
+            </div>
+
+            <div class="vacancy__item" data-category="35" style="display: none;">
+                <a class="item__title" href="#">
+                    <p>SEO-специалист</p>
+                </a>
+                <p>BPM Cloud / Web Focus</p>
+                <p class="item__text"></p>
+                <p>Команда BPM CLOUD ищет SEO-специалиста в нашу команду.</p>
+                <p></p>
+            </div>
+
+            <div class="vacancy__item" data-category="29" style="display: none;">
+                <a class="item__title" href="#">
+                    <p>Account manager</p>
+                </a>
+                <p>BPM Cloud / Web Focus</p>
+                <p class="item__text"></p>
+                <p>BPM Cloud / Web Focus — белорусская аутсорсиноговая и аутстаффинговая IT-компания с центрами
+                    разработки в Беларуси и России. Компания оказывает полный комплекс услуг по разработке, внедрению и
+                    сопровождению программных решений клиентам. Есть как крупные заказчики, так и мелкие, кому
+                    необходимо разработать сайт, лэндинг.</p>
+                <p></p>
+            </div>
+        </div>
+        <div class="main-page-vacancy-list__category">
+            <p>Категории</p>
+            <hr>
+            <ul>
+                <li class="category__button" data-id="55">
+                    <p>Все вакансии</p>
+                </li>
+                <li class="category__button" data-id="29">
+                    <p>Административный персонал</p>
+                </li>
+                <li class="category__button" data-id="60">
+                    <p>Аудиторы</p>
+                </li>
+                <li class="category__button" data-id="35">
+                    <p>Информационные технологии</p>
+                </li>
+                <li class="category__button active" data-id="37">
+                    <p>Маркетинг, реклама, PR</p>
+                </li>
+                <li class="category__button" data-id="40">
+                    <p>Продажи, обслуживание клиентов</p>
+                </li>
+                <li class="category__button" data-id="52">
+                    <p>Финансы, бухгалтерия</p>
+                </li>
+            </ul>
+        </div>
+        <div class="btn">
+            <button class="btn btn-position-aware popmake-29 pum-trigger" style="cursor: pointer;">КОНСУЛЬТАЦИЯ<span
+                    class="position-aware"></span></button>
+        </div>
+    </div>
+</div>
+  <?php get_template_part('template-parts/promotion'); ?>
 
   <div class="cooperation-stages">
     <div class="container">
@@ -475,7 +626,7 @@ Template Post Type: page
       <div class="often-questions__container pt-150 pb-150">
         <div class="often-questions__title">
           <h2 class="title-line-new block">
-            <span>Часто задаваемые вопросы</span>
+            Часто задаваемые вопросы
           </h2>
           <p>Специалисты Кадра собрали актуальные вопросы, с которыми приходилось
             сталкиваться на практике.
@@ -590,9 +741,164 @@ Template Post Type: page
       </div>
     </div>
   </div>
+  
   <?php get_template_part('template-parts/team'); ?>
-  <?php get_template_part('template-parts/news'); ?>
-  <?php get_template_part('template-parts/reviews'); ?>
+  <!-- <..?php get_template_part('template-parts/news'); ?> -->
+  <div class="news">
+    <div class="container">
+        <div class="news__title">
+            <p class="h2">Новости и статьи</p>
+        </div>
+        <div class="news__item">
+            <div class="item__img">
+                <img src="<?= get_template_directory_uri(); ?>/image/news/news_1.jpg" alt="">
+            </div>
+            <div class="item__content">
+                <a class="item__title" href="#">
+                    <p>Как зарабатывать больше?</p>
+                </a>
+                <p class="meta-data">29/12/2020</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et senectus amet elit, eleifend diam purus, pulvinar luctus. Integer bibendum in ultricies eleifend dui. Semper scelerisque quisque diam ac. Amet quam tellus...</p>
+            </div>
+
+        </div>
+        <div class="news__item">
+            <div class="item__img">
+                <img src="<?= get_template_directory_uri(); ?>/image/news/news_2.jpg" alt="">
+            </div>
+            <div class="item__content">
+                <a class="item__title" href="#">
+                    <p>Как зарабатывать больше?</p>
+                </a>
+                <p class="meta-data">29/12/2020</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et senectus amet elit, eleifend diam purus, pulvinar luctus. Integer bibendum in ultricies eleifend dui. Semper scelerisque quisque diam ac. Amet quam tellus...</p>
+            </div>
+
+        </div>
+        <div class="news__item">
+            <div class="item__img">
+                <img src="<?= get_template_directory_uri(); ?>/image/news/news_3.jpg" alt="">
+            </div>
+            <div class="item__content">
+                <a class="item__title" href="#">
+                    <p>Как зарабатывать больше?</p>
+                </a>
+                <p class="meta-data">29/12/2020</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et senectus amet elit, eleifend diam purus, pulvinar luctus. Integer bibendum in ultricies eleifend dui. Semper scelerisque quisque diam ac. Amet quam tellus...</p>
+            </div>
+
+        </div>
+        <div class="news__item more">
+            <p class="h3">Хотите больше интересных статей?</p>
+            <a class="btn btn-position-aware dark" href="#">ПОСМОТРЕТЬ БЛОГ<span class="position-aware"></span></a>
+        </div>
+    </div>
+</div>
+<div class="reviews">
+    <div class="container">
+        <div class="reviews__title">
+            <p class="h2">Отзывы</p>
+        </div>
+        <div class="underline-block block"></div>
+        <div class="reviews-slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="reviews__item">
+                        <div class="item__img">
+                            <img src="<?= get_template_directory_uri(); ?>/image/reviews/review1.jpg" alt="">
+                        </div>
+                        <div class="item__content">
+                            <p class="name">Екатерина Егорова</p>
+                            <p class="item__meta organization">ООО “ БПМ Клауд”</p>
+                            <div class="reviews-slider__text" data-id="97">
+                                <p>Благодарим кадровое агентство Hrbel.by за оказание услуг по подбору персонала для нашей компании. В процессе сотрудничества работники Hrbel.by помогли нам найти подходящих кандидатов сразу по нескольким вакансиям с нестандартными требованиям. Мы искали в свою команду сотрудников по IT-специальностям и финансовому профилю. Хотим отметить, что кандидаты на вакантные должности которых нам предлагали...</p>
+                            </div>
+                            <span class="read-more" data-id="97">Читать полностью</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="reviews__item">
+                        <div class="item__img">
+                            <img src="<?= get_template_directory_uri(); ?>/image/reviews/review2.jpg" alt="">
+                        </div>
+                        <div class="item__content">
+                            <p class="name">Екатерина Егорова</p>
+                            <p class="item__meta organization">ООО “ БПМ Клауд”</p>
+                            <div class="reviews-slider__text" data-id="97">
+                                <p>Благодарим кадровое агентство Hrbel.by за оказание услуг по подбору персонала для нашей компании. В процессе сотрудничества работники Hrbel.by помогли нам найти подходящих кандидатов сразу по нескольким вакансиям с нестандартными требованиям. Мы искали в свою команду сотрудников по IT-специальностям и финансовому профилю. Хотим отметить, что кандидаты на вакантные должности которых нам предлагали...</p>
+                            </div>
+                            <span class="read-more" data-id="97">Читать полностью</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="reviews__item">
+                        <div class="item__img">
+                            <img src="<?= get_template_directory_uri(); ?>/image/reviews/review3.jpg" alt="">
+                        </div>
+                        <div class="item__content">
+                            <p class="name">Екатерина Егорова</p>
+                            <p class="item__meta organization">ООО “ БПМ Клауд”</p>
+                            <div class="reviews-slider__text" data-id="97">
+                                <p>Благодарим кадровое агентство Hrbel.by за оказание услуг по подбору персонала для нашей компании. В процессе сотрудничества работники Hrbel.by помогли нам найти подходящих кандидатов сразу по нескольким вакансиям с нестандартными требованиям. Мы искали в свою команду сотрудников по IT-специальностям и финансовому профилю. Хотим отметить, что кандидаты на вакантные должности которых нам предлагали...</p>
+                            </div>
+                            <span class="read-more" data-id="97">Читать полностью</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="reviews__item">
+                        <div class="item__img">
+                            <img src="<?= get_template_directory_uri(); ?>/image/reviews/review4.jpg" alt="">
+                        </div>
+                        <div class="item__content">
+                            <p class="name">Екатерина Егорова</p>
+                            <p class="item__meta organization">ООО “ БПМ Клауд”</p>
+                            <div class="reviews-slider__text" data-id="97">
+                                <p>Благодарим кадровое агентство Hrbel.by за оказание услуг по подбору персонала для нашей компании. В процессе сотрудничества работники Hrbel.by помогли нам найти подходящих кандидатов сразу по нескольким вакансиям с нестандартными требованиям. Мы искали в свою команду сотрудников по IT-специальностям и финансовому профилю. Хотим отметить, что кандидаты на вакантные должности которых нам предлагали...</p>
+                            </div>
+                            <span class="read-more" data-id="97">Читать полностью</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="reviews__item">
+                        <div class="item__img">
+                            <img src="<?= get_template_directory_uri(); ?>/image/reviews/review5.jpg" alt="">
+                        </div>
+                        <div class="item__content">
+                            <p class="name">Екатерина Егорова</p>
+                            <p class="item__meta organization">ООО “ БПМ Клауд”</p>
+                            <div class="reviews-slider__text" data-id="97">
+                                <p>Благодарим кадровое агентство Hrbel.by за оказание услуг по подбору персонала для нашей компании. В процессе сотрудничества работники Hrbel.by помогли нам найти подходящих кандидатов сразу по нескольким вакансиям с нестандартными требованиям. Мы искали в свою команду сотрудников по IT-специальностям и финансовому профилю. Хотим отметить, что кандидаты на вакантные должности которых нам предлагали...</p>
+                            </div>
+                            <span class="read-more" data-id="97">Читать полностью</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev">
+                <img src="<?= get_template_directory_uri(); ?>/image/nav-vector.svg" alt="Векторный графический элемент">
+            </div>
+            <div class="swiper-button-next">
+                <img src="<?= get_template_directory_uri(); ?>/image/nav-vector.svg" alt="Векторный графический элемент">
+            </div>
+            </div>
+            <a class="btn btn-position-aware" href="#">ЕЩЕ ОТЗЫВЫ<span class="position-aware"></span></a>
+    </div>
+</div>
+  <!-- <..?php get_template_part('template-parts/reviews'); ?> -->
   <?php get_template_part('template-parts/contact-us-2'); ?>
 </main>
 <link rel="preload" as="image" href="<?php echo get_field('slajder-1'); ?>" />

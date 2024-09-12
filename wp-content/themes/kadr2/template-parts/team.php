@@ -13,70 +13,63 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="swiper-slide__image">
-            <img src="<?= get_template_directory_uri(); ?>/image/team/tatyana-staravoytova.jpg"
-              alt="Татьяна Старовойтова - Директор">
+            <img src="<?= get_template_directory_uri(); ?>/image/team/viktor_anischenko.jpg"
+              alt="">
           </div>
           <div class="swiper-slide__text">
-            <p class="name">Татьяна Старовойтова</p>
-            <p>Директор</p>
-            <p>Татьяна - это не просто директор, это вдохновляющий лидер и профессионал своего дела, чьи знания и опыт в
-              области управления персоналом делают её незаменимым активом для "Кадр" и всего рынка труда в целом.</p>
+            <p class="name">Виктор Анищенко</p>
+            <p>Руководитель компании</p>
+            <p>Является руководителем компании уже 3 года. С момента назначения его на руководительскую должность, рост компании и ее прибыль заметно увеличились. </p>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="swiper-slide__image">
-            <img src="<?= get_template_directory_uri(); ?>/image/team/tatyana-dobriyanik.jpg"
-              alt="Татьяна Добрияник - Ведущий специалист по подбору персонала">
+            <img src="<?= get_template_directory_uri(); ?>/image/team/person1.jpg"
+              alt="">
           </div>
           <div class="swiper-slide__text">
-            <p class="name">Татьяна Добрияник</p>
-            <p>Ведущий специалист по подбору персонала</p>
-            <p>Выдающийся специалист по подбору персонала с 5-летним опытом. Ее экспертиза охватывает широкий спектр
-              отраслей: офисный персонал, продажи, строительство, общественное питание, ВЭД, логистика и медицина.</p>
+            <p class="name">X</p>
+            <p>X</p>
+            <p>X</p>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="swiper-slide__image">
-            <img src="<?= get_template_directory_uri(); ?>/image/team/mariya-arhipenko.jpg"
-              alt="Мария Архипенко - Рекрутер">
+            <img src="<?= get_template_directory_uri(); ?>/image/team/person2.jpg"
+              alt="">
           </div>
           <div class="swiper-slide__text">
-            <p class="name">Мария Архипенко</p>
-            <p>Рекрутер</p>
-            <p>Мария - это стрессоустойчивость, ответственность, доброжелательность и фокус на результат. Особое
-              внимание уделяет техническим направлениям, таким как инженеры, специалисты технической поддержки и
-              телекоммуникаций.</p>
+            <p class="name">X</p>
+            <p>X</p>
+            <p>X/p>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="swiper-slide__image">
-            <img src="<?= get_template_directory_uri(); ?>/image/team/liliya-ershova.jpg" alt="Лилия Ершова - Рекрутер">
+            <img src="<?= get_template_directory_uri(); ?>/image/team/person3.jpg" alt="">
           </div>
           <div class="swiper-slide__text">
-            <p class="name">Лилия Ершова</p>
-            <p>Рекрутер</p>
-            <p>Опытный рекрутер, специализирующийся на подборе IT специалистов, а также экспертов в областях аудита,
-              бухгалтерии и юридических услуг. Она известна своими неординарными способами находить решения для любых
-              задач.</p>
+            <p class="name">X</p>
+            <p>X</p>
+            <p>X</p>
           </div>
         </div>
-        <div class="swiper-slide">
+        <!-- <div class="swiper-slide">
           <div class="swiper-slide__image">
             <picture style="width: 100%; height: 100%">
-              <source srcset="<?= get_template_directory_uri(); ?>/image/team-page/new-team-img/slider/img-1.jpg">
-              <img src="<?= get_template_directory_uri(); ?>/image/team-page/new-team-img/slider/img-1.jpg"
-                class="img-cover" alt="Александра Демчук - Рекрутер">
+              <source srcset="<..?= get_template_directory_uri(); ?>/image/team-page/new-team-img/slider/img-1.jpg">
+              <img src="<..?= get_template_directory_uri(); ?>/image/team-page/new-team-img/slider/img-1.jpg"
+                class="img-cover" alt="">
             </picture>
           </div>
           <div class="swiper-slide__text">
-            <p class="name">Александра Демчук</p>
-            <p>Рекрутер</p>
+            <p class="name">X</p>
+            <p>X</p>
             <p>
-              Успешно занимается массовым подбором, легко ориентируется в большом потоке резюме и откликов. Александра
-              находит лучших специалистов и качественно закрывает вакансии. Ее рекорд закрытий за месяц — 25 вакансий!
+              X
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -86,7 +79,7 @@
     <div class="team-slider swiper-button-next">
       <img src="<?= get_template_directory_uri(); ?>/image/nav-vector.svg" alt="Векторный графический элемент">
     </div>
-    <a class="btn btn-position-aware" href="/o-kompanii/nasha-komanda/">НАША КОМАНДА<span
+    <a class="btn btn-position-aware" href="#">ВСЯ КОМАНДА<span
         class="position-aware"></span></a>
   </div>
 </div>
