@@ -379,18 +379,20 @@ jQuery(document).ready(function($) {
     }, false );    
 
         const fileInputBlock = document.querySelector('.contact-us__form-file');
-        const fileInput = fileInputBlock.querySelector('input[type="file"]');
-        const labelSpan = fileInputBlock.querySelector('label span');
+        
+        if (fileInputBlock) {
+          const fileInput = fileInputBlock.querySelector('input[type="file"]');
+          const labelSpan = fileInputBlock.querySelector('label span');
 
-        const defText = labelSpan.textContent;
-
-        fileInput.addEventListener('change', function() {
+          const defText = labelSpan.textContent;
+          fileInput.addEventListener('change', function() {
             if (this.files && this.files.length > 0) {
                 labelSpan.textContent = this.files[0].name;
             } else {
                 labelSpan.textContent = defText;
             }
         });
+        }
 });
 
     

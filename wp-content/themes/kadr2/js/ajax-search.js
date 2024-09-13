@@ -9,36 +9,7 @@ jQuery(function($) {
     const btnsSubmit = $('.btn-search.submit');
     const btnsSearch = $('.btn-search.search');
 
-    $(document).on('mouseup', function(e) {
-        if (!search_input.is(e.target) && !search_input.has(e.target).length &&
-            !search_results.is(e.target) && !search_results.has(e.target).length) {
-            search_results.fadeOut(200);
-            header.removeClass('search-open'); 
-            setTimeout(() => {
-              $('.header-panel__main').fadeToogle(300);
-              $('.header-logo').fadeToogle(300);
-              $('.search-header').css('width', 'auto');
-            }, 1200)
-            btnsSearch.css('display', 'block');
-            btnsSubmit.css('display', 'none');
-        }
-
-        if (search_input.hasClass("active") &&
-            !search_input.is(e.target) &&
-            !btnSearchInHeader.is(e.target) &&
-            !btnSearchInHeader.has(e.target).length &&
-            search_input.has(e.target).length === 0) {
-            search_input.removeClass("active");
-            header.removeClass('search-open'); 
-            setTimeout(() => {
-              $('.header-panel__main').fadeIn(300);
-              $('.header-logo').fadeIn(300);
-              $('.search-header').css('width', 'auto');
-            }, 1200)
-            btnsSearch.css('display', 'block');
-            btnsSubmit.css('display', 'none');
-        }
-    });
+   
 
     btnSearchInHeader.click(function() {
       if ($(window).width() > 767) {

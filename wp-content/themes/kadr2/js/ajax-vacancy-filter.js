@@ -122,36 +122,64 @@ jQuery(document).ready(function ($) {
     });
   });
 
-  $("#vacancies_filter").submit(function () {
+  // $("#vacancies_filter").submit(function (e) {
+  //   e.preventDefault();
+  //   var vacancies_filter = $(this);
+  //   var page_number = "1";
+  //   var data = vacancies_filter.serialize();
+  //   var salary_min = $(".js-range-slider").data().from;
+  //   var salary_max = $(".js-range-slider").data().to;
+  //   data =
+  //     data +
+  //     "&page-number=" +
+  //     page_number +
+  //     "&salary-min=" +
+  //     salary_min +
+  //     "&salary-max=" +
+  //     salary_max;
+  //   console.log(ajaxurl);
+  //   $.ajax({
+  //     url: ajaxurl, // обработчик
+  //     data: data, // данные
+  //     type: "POST", // тип запроса
+  //     beforeSend: function (xhr) {
+  //       vacancies_filter.find("button").text("Загружаю..."); // изменяем текст кнопки
+  //       $(".vacancies__response").empty();
+  //       $(".vacancies__response").append("<p>Загрузка вакансий</p>");
+  //     },
+  //     success: function (data) {
+  //       vacancies_filter.find("button").text("ИСКАТЬ"); // возвращаеи текст кнопки
+  //       $(".vacancies__response").html(data);
+  //     },
+  //   });
+  //   return false;
+  // });
+  $("#vacancies_filter").submit(function (e) {
+    e.preventDefault();
     var vacancies_filter = $(this);
     var page_number = "1";
     var data = vacancies_filter.serialize();
     var salary_min = $(".js-range-slider").data().from;
     var salary_max = $(".js-range-slider").data().to;
-    data =
-      data +
-      "&page-number=" +
-      page_number +
-      "&salary-min=" +
-      salary_min +
-      "&salary-max=" +
-      salary_max;
+    data = data + "&page-number=" + page_number + "&salary-min=" + salary_min + "&salary-max=" + salary_max;
+    console.log(blog.ajaxurl);
     $.ajax({
-      url: ajaxurl, // обработчик
-      data: data, // данные
-      type: "POST", // тип запроса
-      beforeSend: function (xhr) {
-        vacancies_filter.find("button").text("Загружаю..."); // изменяем текст кнопки
-        $(".vacancies__response").empty();
-        $(".vacancies__response").append("<p>Загрузка вакансий</p>");
-      },
-      success: function (data) {
-        vacancies_filter.find("button").text("ИСКАТЬ"); // возвращаеи текст кнопки
-        $(".vacancies__response").html(data);
-      },
+        url: blog.ajaxurl, // using the localized ajaxurl
+        data: data,
+        type: "POST",
+        beforeSend: function (xhr) {
+            vacancies_filter.find("button").text("Загружаю..."); // changing button text
+            $(".vacancies__response").empty();
+            $(".vacancies__response").append("<p>Загрузка вакансий</p>");
+        },
+        success: function (data) {
+            vacancies_filter.find("button").text("ИСКАТЬ");
+            $(".vacancies__response").html(data);
+        },
     });
     return false;
-  });
+});
+
   var filter_items = $(".filter-item").not(".filter-item.specialization");
   $.each(filter_items, function () {
     $(this)

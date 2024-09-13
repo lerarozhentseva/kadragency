@@ -131,16 +131,30 @@ function themeslug_enqueue_script()
 
   if ($page_id == 33) {
     wp_enqueue_style('ionrangeslider', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css', array(), '1.1', 'all');
-    wp_enqueue_script('ionrangeslider', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js', false);
+    wp_enqueue_script('ionrangeslider', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js', array('jquery'), null, true);
 
-    wp_register_script('ajax-vacancy-filter', get_template_directory_uri() . '/js/ajax-vacancy-filter.js', true);
+    // Enqueue the vacancy filter script and localize ajax URL
+    wp_enqueue_script('ajax-vacancy-filter', get_template_directory_uri() . '/js/ajax-vacancy-filter.js', array('jquery'), null, true);
+
     $script_data_array = array(
-      'ajaxurl' => admin_url('admin-ajax.php'),
-      'security' => wp_create_nonce('load_more_posts'),
+        'ajaxurl' => admin_url('admin-ajax.php'),
+        'security' => wp_create_nonce('load_more_posts'),
     );
     wp_localize_script('ajax-vacancy-filter', 'blog', $script_data_array);
-    wp_enqueue_script('ajax-vacancy-filter');
-  }
+}
+
+  // if ($page_id == 33) {
+  //   wp_enqueue_style('ionrangeslider', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css', array(), '1.1', 'all');
+  //   wp_enqueue_script('ionrangeslider', 'https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js', false);
+
+  //   wp_register_script('ajax-vacancy-filter', get_template_directory_uri() . '/js/ajax-vacancy-filter.js', true);
+  //   $script_data_array = array(
+  //     'ajaxurl' => admin_url('admin-ajax.php'),
+  //     'security' => wp_create_nonce('load_more_posts'),
+  //   );
+  //   wp_localize_script('ajax-vacancy-filter', 'blog', $script_data_array);
+  //   wp_enqueue_script('ajax-vacancy-filter');
+  // }
 
   if ($page_id == 912) {
     wp_dequeue_style('swiper');

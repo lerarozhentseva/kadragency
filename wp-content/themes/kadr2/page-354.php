@@ -19,7 +19,7 @@ Template Post Type: page
   <div id="check-out-our-offers" class="check-out-our-offers page-header">
     <div class="container">
       <div class="check-out-our-offers__item">
-        <form action="" method="POST" id="vacancies_filter">
+        <form method="POST" id="vacancies_filter">
           <div class="filter-item specialization">
             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_764_16096)">
@@ -260,6 +260,7 @@ Template Post Type: page
             </div>
           </div>
         </form>
+        
         <div id="vacancies__response" class="vacancies__response">
 
           <?php
@@ -346,11 +347,35 @@ Template Post Type: page
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="find-vacancy">
+    <div class="container">
+      <div class="find-vacancy__image">
+        <picture>
+          <!-- <source srcset="<?= get_template_directory_uri(); ?>/image/find-vacancy.webp" type="image/webp"> -->
+          <source srcset="<?= get_template_directory_uri(); ?>/image/find-vacancy.jpg" type="image/jpeg">
+          <img src="<?= get_template_directory_uri(); ?>/image/find-vacancy.jpg" alt="">
+        </picture>
+      </div>
+      <div class="find-vacancy__item">
+        <h2>Нет подходящей вакансии?</h2>
+        <p>Предлагаем отправить ваше резюме нам на почту <a href="mailto:xxx@dd.dd">xxx@dd.dd</a></p>
+        <a class="btn btn-position-aware" href="#">КОНСУЛЬТАЦИЯ<span class="position-aware"></span></a>
+        <div class="find-vacancy__item-decor">
+          <img src="<?= get_template_directory_uri(); ?>/image/find-vacancy__decor.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="contact-main get-free-consult__container">
     <?php get_template_part('template-parts/contact-us'); ?>
-    <div class="waiting-for-suggestions">
+  </div> -->
+
+  <div class="waiting-for-suggestions">
       <div class="container">
         <div class="waiting-for-suggestions__title">
-          <h2>Ждем предложений от специалистов:</h2>
+          <h2>Работа в агентстве «Кадр»</h2>
           <div class="underline-block"></div>
         </div>
         <div class="waiting-for-suggestions__image">
@@ -362,52 +387,12 @@ Template Post Type: page
           </picture>
         </div>
         <div class="waiting-for-suggestions__item">
-          <ol>
-            <li>
-              <p><a class="text-link" href="<?= get_site_url(); ?>/poisk-i-podbor-personala/">В поиске и подборе
-                  персонала</a>;</p>
-            </li>
-            <li>
-              <p>По внедрению, <a class="text-link"
-                  href="<?= get_site_url(); ?>/kadrovyj-konsalting/adaptaciya-personala/">адаптации</a> и сопровождению
-                на период трудоустройства;</p>
-            </li>
-            <li>
-              <p>Владеющих коллективными <a class="text-link"
-                  href="<?= get_site_url(); ?>/kadrovyj-konsalting/sistema-motivacii-personala/">методиками
-                  мотивации</a>, технологиями личностного и карьерного роста;</p>
-            </li>
-            <li>
-              <p>Аналитиков по нормированию и оплате труда;</p>
-            </li>
-            <li>
-              <p>По <a class="text-link"
-                  href="<?= get_site_url(); ?>/kadrovyj-konsalting/attestaciya-personala/">аттестации</a> и <a
-                  class="text-link"
-                  href="<?= get_site_url(); ?>/kadrovyj-konsalting/ocenka-i-testirovanie-personala/">оценке</a>;</p>
-            </li>
-            <li>
-              <p>Инженеров по охране труда;</p>
-            </li>
-            <li>
-              <p>Экспертов по трудовому праву;</p>
-            </li>
-            <li>
-              <p>Кадровиков;</p>
-            </li>
-            <li>
-              <p>Программистов и других.</p>
-            </li>
-          </ol>
-          <p>Мы опираемся на многолетний опыт корифеев – основателей компании. Они хранители традиций и разработчики
-            базовых технологий. Мы рассматриваем соискателей с опытом, но молодые, амбициозные сотрудники со свежими
-            идеями и нестандартными предложениями тоже ценятся, так как мы намерены развиваться за счет инноваций.</p>
-          <p>От нас – полная рабочая загрузка, дружеская поддержка, интересная жизнь и возможность быть на шаг впереди и
-            на голову выше остальных. Ждем и надеемся, что Вы уже в пути.</p>
+          <p>Присоединяйтесь к нашей команде, где мы помогаем нашим клиентам в улучшении внутренних бизнес-процессов и решении кадровых задач любой сложности!</p>
+          <a class="btn btn-position-aware" href="#">ПОДРОБНЕЕ<span class="position-aware"></span></a>
         </div>
       </div>
-    </div>
-    <?php get_template_part('template-parts/team'); ?>
+          </div>
+      <?php get_template_part('template-parts/team'); ?>
     <?php get_template_part('template-parts/news'); ?>
     <?php get_template_part('template-parts/reviews'); ?>
     <?php get_template_part('template-parts/contact-us-2'); ?>
