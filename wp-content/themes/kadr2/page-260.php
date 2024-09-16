@@ -18,7 +18,7 @@ Template Post Type: page
             class="position-aware"></span></button>
       </div>
       <div class="q-a-title__item page-header__item item-2">
-        <img src="<?= get_template_directory_uri(); ?>/image/q&a.svg" alt="Подставка для ноутбука">
+        <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a__banner.jpg" alt="">
         <a class="btn btn-position-aware dark smooth-transition" href="#q-a"><img
             src="<?= get_template_directory_uri(); ?>/image/arrow-to-bottom.svg" alt="Белый графический элемент"><span
             class="position-aware quad"></span></a>
@@ -29,7 +29,7 @@ Template Post Type: page
     <div class="container">
       <div class="q-a__item">
         <div class="item__image">
-          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a-1.svg" alt="Стул в пустой комнате">
+          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a1.jpg" alt="">
         </div>
         <div class="item__text">
           <h5>Стоимость услуг hr агентства по подбору персонала?</h5>
@@ -49,7 +49,7 @@ Template Post Type: page
       </div>
       <div class="q-a__item reverse">
         <div class="item__image">
-          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a-2.svg" alt="Подоконник с цветами">
+          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a2.jpg" alt="">
         </div>
         <div class="item__text">
           <h5>Ваше кадровое агентство использует собственную базу резюме для подбора соискателей?</h5>
@@ -73,7 +73,7 @@ Template Post Type: page
       </div>
       <div class="q-a__item">
         <div class="item__image">
-          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a-1.svg" alt="Стул в пустой комнате">
+          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a3.jpg" alt="">
         </div>
         <div class="item__text">
           <h5>Стоимость услуг hr агентства по подбору персонала?</h5>
@@ -93,7 +93,7 @@ Template Post Type: page
       </div>
       <div class="q-a__item reverse">
         <div class="item__image">
-          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a-2.svg" alt="Подоконник с цветами">
+          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a4.jpg" alt="">
         </div>
         <div class="item__text">
           <h5>Ваше кадровое агентство использует собственную базу резюме для подбора соискателей?</h5>
@@ -117,7 +117,7 @@ Template Post Type: page
       </div>
       <div class="q-a__item">
         <div class="item__image">
-          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a-1.svg" alt="Стул в пустой комнате">
+          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a5.jpg" alt="">
         </div>
         <div class="item__text">
           <h5>Стоимость услуг hr агентства по подбору персонала?</h5>
@@ -137,7 +137,7 @@ Template Post Type: page
       </div>
       <div class="q-a__item reverse">
         <div class="item__image">
-          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a-2.svg" alt="Подоконник с цветами">
+          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a6.jpg" alt="">
         </div>
         <div class="item__text">
           <h5>Ваше кадровое агентство использует собственную базу резюме для подбора соискателей?</h5>
@@ -161,7 +161,7 @@ Template Post Type: page
       </div>
       <div class="q-a__item">
         <div class="item__image">
-          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a-1.svg" alt="Стул в пустой комнате">
+          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a7.jpg" alt="">
         </div>
         <div class="item__text">
           <h5>Стоимость услуг hr агентства по подбору персонала?</h5>
@@ -181,7 +181,51 @@ Template Post Type: page
       </div>
       <div class="q-a__item reverse">
         <div class="item__image">
-          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a-2.svg" alt="Подоконник с цветами">
+          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a8.jpg" alt="">
+        </div>
+        <div class="item__text">
+          <h5>Ваше кадровое агентство использует собственную базу резюме для подбора соискателей?</h5>
+          <ol>
+            <li>
+              <p>Решением кадровых вопросов занимается команда опытных рекрутеров с многолетним опытом успешного подбора кадров для разных направлений бизнеса.</p>
+            </li>
+            <li>
+              <p>Решением кадровых вопросов занимается команда опытных рекрутеров с многолетним опытом успешного подбора кадров для разных направлений бизнеса.</p>
+            </li>
+            <li>
+              <p>Решением кадровых вопросов занимается команда опытных рекрутеров с многолетним опытом успешного подбора кадров для разных направлений бизнеса.</p>
+            </li>
+            <li>
+              <p>Решением кадровых вопросов занимается команда опытных рекрутеров с многолетним опытом успешного подбора кадров для разных направлений бизнеса.</p>
+            </li>
+          </ol>
+          <p>Персональный рекрутер изучит ситуацию предприятия, сможет оперативно реагировать, если требования изменятся в процессе. Он избавит Вас от потока предложений соискателей и назойливых предложений кадровых агентств, Вы сэкономите время, силы и деньги.
+          </p>
+        </div>
+      </div>
+      <div class="q-a__item">
+        <div class="item__image">
+          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a9.jpg" alt="">
+        </div>
+        <div class="item__text">
+          <h5>Стоимость услуг hr агентства по подбору персонала?</h5>
+          <ul>
+            <li>
+              <p>Лучший выход взять рекрутера временно на прокат, то есть, на аутсорсинг. Он будет работать по договору и за разумную плату закроет вакансии в короткий срок.
+              </p>
+            </li>
+            <li>
+              <p>Лучший выход взять рекрутера временно на прокат, то есть, на аутсорсинг. Он будет работать по договору и за разумную плату закроет вакансии в короткий срок.
+              </p>
+            </li>
+          </ul>
+          <p>Персональный рекрутер изучит ситуацию предприятия, сможет оперативно реагировать, если требования изменятся в процессе. Он избавит Вас от потока предложений соискателей и назойливых предложений кадровых агентств, Вы сэкономите время, силы и деньги.
+          </p>
+        </div>
+      </div>
+      <div class="q-a__item reverse">
+        <div class="item__image">
+          <img src="<?= get_template_directory_uri(); ?>/image/q-a/q-a10.jpg" alt="">
         </div>
         <div class="item__text">
           <h5>Ваше кадровое агентство использует собственную базу резюме для подбора соискателей?</h5>

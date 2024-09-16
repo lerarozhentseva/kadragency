@@ -6529,10 +6529,6 @@ p.contact > a {
   flex-direction: column;
 }
 
-.about-the-company-title__item.item-1 {
-  width: 50%;
-}
-
 .about-the-company-title__item img {
   width: 498px;
   height: 730px;
@@ -6540,11 +6536,6 @@ p.contact > a {
   object-fit: cover;
   -o-object-position: 63% 50%;
   object-position: 63% 50%;
-}
-
-.about-the-company-title__item.item-1 p {
-  margin-top: 20px;
-  padding-right: 90px;
 }
 
 .about-the-company-title__item.item-2 {
@@ -6584,20 +6575,13 @@ p.contact > a {
 }
 
 .about-the-company .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  gap: 30px;
   padding: 150px 15px 0px 15px;
+}
+
+.about-the-company .about-the-company__container {
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about-the-company .about-the-company__excerption {
@@ -6651,8 +6635,10 @@ p.contact > a {
 }
 
 .about-the-company .about-the-company__item {
-  width: 320px;
+  min-width: 265px;
   padding-top: 30px;
+  flex-grow: 1;
+  flex-basis: 20%;
 }
 
 .about-the-company .about-the-company__item.item-1 {
@@ -6696,6 +6682,7 @@ p.contact > a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
 }
 
 .about-the-company .about-the-company__item .border svg {
@@ -6704,6 +6691,7 @@ p.contact > a {
 
 .about-the-company .about-the-company__item h5 {
   margin: 30px 0px 20px 0px;
+  font-size: 16px;
 }
 
 .sertificate h2 {
@@ -6780,8 +6768,7 @@ p.contact > a {
 }
 
 .history-of-company ol li p:first-child {
-  font-weight: bold;
-  padding-bottom: 10px;
+  padding-top: 30px;
 }
 
 .history-of-company ol li:before {
@@ -18445,7 +18432,7 @@ footer hr {
   }
 
   .about-the-company .about-the-company__item {
-    width: 280px;
+    min-width: 180px;
   }
 
   .history-of-company .container {
@@ -28817,6 +28804,7 @@ footer hr {
     -ms-flex-direction: row;
     flex-direction: row;
     width: 100%;
+    min-width: 300px;
   }
 
   .about-the-company .about-the-company__item .item__image {
@@ -37639,5 +37627,31 @@ p.day__title {
     width: 100%;
   }
 }
+
+.advantages-to-work {
+  background-color: #fbf6f4;
+}
+
+.advantages-to-work__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.advantages-to-work__container .advantages-to-work__item {
+  flex-grow: 1;
+  flex-basis: 48%;
+  background-color: #FFFF;
+  padding: 45px 60px;
+  position: relative;
+}
+
+.advantage-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 
 
