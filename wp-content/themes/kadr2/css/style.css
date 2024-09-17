@@ -2090,9 +2090,9 @@ main.padding {
   margin-right: 20px;
 }
 
-.contact-main {
+/* .contact-main {
   padding-top: 150px;
-}
+} */
 
 /* Стили template-parts/contact-us(он же "Свяжитесь с нами") (1900px) */
 .contact-us .container {
@@ -2127,6 +2127,10 @@ main.padding {
   z-index: 2;
   padding-right: 132px;
   position: relative;
+}
+
+.contacts .container.map {
+  padding-bottom: 0;
 }
 
 .contact-us .success__title {
@@ -2276,8 +2280,32 @@ main.padding {
   cursor: text;
 }
 
+.contact-us__form span[data-name='your-full-name']::before {
+  content: 'ФИО *';
+  color: #000000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 16px;
+  cursor: text;
+}
+
 .contact-us__form span[data-name='your-name'].active::before {
   content: 'Имя ●';
+  color: #9d9a97;
+  width: 50px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.contact-us__form span[data-name='your-full-name'].active::before {
+  content: 'ФИО ●';
   color: #9d9a97;
   width: 50px;
   -webkit-transition: all 0.3s;
@@ -3202,7 +3230,6 @@ main.padding {
 }
 
 .advantages__img img {
-  width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -4181,7 +4208,6 @@ main.padding {
 
 .contact-us__text {
   margin-top: 40px;
-  padding-left: 24px;
 }
 
 .contact-link {
@@ -4231,11 +4257,10 @@ p.contact > a {
 }
 
 .contact-us__text .text__item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 20px;
-  width: 50%;
   margin-bottom: 30px;
+  align-items: center;
 }
 
 .contact-us__text .text__item .item__img {
@@ -4243,11 +4268,11 @@ p.contact > a {
   height: 50px;
 }
 
-.contact-us__text .text__item .item__img img {
+/* .contact-us__text .text__item .item__img img {
   min-height: 35px;
   width: 50px;
   height: 50px;
-}
+} */
 
 /* Стили для блоков с заголовком страниц (1900px) */
 .page-header {
@@ -4294,8 +4319,8 @@ p.contact > a {
 }
 
 .page-header .page-header__item img {
-  width: 500px;
-  height: 776px;
+  /* width: 500px;
+  height: 776px; */
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -15037,7 +15062,7 @@ p.contact > a {
 .custom-block .block__title {
   position: relative;
   z-index: 2;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .custom-block .block__item table {
@@ -15234,9 +15259,9 @@ p.contact > a {
   z-index: 1;
 }
 
-.custom-block .block__item > p {
+/* .custom-block .block__item > p {
   width: 580px;
-}
+} */
 
 .custom-block p.half-width {
   width: 100%;
@@ -17444,10 +17469,10 @@ footer hr {
   .page-header .page-header__item.item-1 .btn {
     margin-top: 50px;
   }
-
+/* 
   .page-header .page-header__item img {
     height: 690px;
-  }
+  } */
 
   .items-wrap {
     z-index: 2;
@@ -18102,9 +18127,9 @@ footer hr {
     padding-right: 80px;
   }
 
-  .page-header .page-header__item img {
+  /* .page-header .page-header__item img {
     width: 407px;
-  }
+  } */
 
   .page-header__item.item-1 p {
     padding-right: 75px;
@@ -20701,9 +20726,9 @@ footer hr {
     width: 450px;
   }
 
-  .custom-block .block__item > p {
+  /* .custom-block .block__item > p {
     width: 450px;
-  }
+  } */
 
   .custom-block p.half-width {
     width: 100%;
@@ -21343,9 +21368,9 @@ footer hr {
     margin-top: 40px;
   }
 
-  .page-header .page-header__item img {
+  /* .page-header .page-header__item img {
     height: 628px;
-  }
+  } */
 
   /* Конец стилей хедера (768px) */
   .header .search {
@@ -22254,10 +22279,10 @@ footer hr {
     width: 718px;
   }
 
-  .page-header .page-header__item img {
+  /* .page-header .page-header__item img {
     width: 326px;
     height: 594px;
-  }
+  } */
   .page-header .page-header__item.item-1 p {
     padding-right: 20px;
   }
@@ -28033,9 +28058,9 @@ footer hr {
     width: 100%;
   }
 
-  .page-header .page-header__item img {
+  /* .page-header .page-header__item img {
     width: 100%;
-  }
+  } */
 
   .page-header .page-header__item.item-1 p {
     padding-right: 0px;
@@ -28053,10 +28078,10 @@ footer hr {
   .page-header .page-header__item.item-2 {
     width: 100%;
   }
-  .page-header .page-header__item img {
+  /* .page-header .page-header__item img {
     width: 100%;
     height: 189px;
-  }
+  } */
 
   .page-header .page-header__item picture {
     width: 100%;
@@ -31983,9 +32008,9 @@ footer hr {
   .custom-block.block-5 .block-image {
     width: 100% !important;
   }
-  .page-header .page-header__item img {
+  /* .page-header .page-header__item img {
     height: 200px;
-  }
+  } */
   .page-header.custom-block > .container > .page-header__item > .breadcrumbs.container {
     flex-direction: row;
     margin: 0;
@@ -37653,5 +37678,38 @@ p.day__title {
   left: 0;
 }
 
+.contacts .about-the-company-title .contact-us__text img {
+  height: unset;
+  width: unset;
+}
+
+.oferta .custom-block .block__item {
+  display: block;
+  width: 80%;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 650px) {
+  .oferta .custom-block .block__item {
+    width: 100%;
+  }
+}
+
+.oferta .custom-block .block__item p {
+  margin-bottom: 15px;
+}
+
+.leave-feedback .contact-us__form .data-processing-checkbox input:checked + span {
+  width: 80%;
+}
+
+.leave-feedback .contact-us__form .data-processing-checkbox input:checked + span::after {
+  top: 5px;
+}
 
 
+@media (max-width: 767px) {
+  .leave-feedback .contact-us__form .data-processing-checkbox input:checked + span::after {
+    top: -10px;
+  }
+}
