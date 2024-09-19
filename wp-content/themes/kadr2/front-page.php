@@ -17,7 +17,7 @@ Template Post Type: page
               <li><?= $item; ?></li>
             <?php endforeach; ?>
         </ul>
-        <button class="btn btn-position-aware popmake-29">КОНСУЛЬТАЦИЯ<span class="position-aware"></span></button>
+        <button class="btn btn-position-aware popmake-29">Запросить консультацию<span class="position-aware"></span></button>
       </div>
       <div class="offer-slider swiper-container">
         <div class="swiper-wrapper">
@@ -69,16 +69,23 @@ Template Post Type: page
   </div>
   <div class="about-us">
     <div class="container">
-      <div class="about-us__title">
-        <h2>Кто мы?</h2>
-        <div class="underline-block">
-        </div>
+      <div class="bg-image">
+        <svg width="667" height="120" viewBox="0 0 667 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M645.603 37.3433C645.603 32.9367 643.615 29.2287 639.638 26.2193C635.661 23.2099 630.771 21.7052 624.967 21.7052C620.131 21.7052 615.831 22.8875 612.07 25.252C608.308 27.509 605.782 30.4647 604.492 34.119L583.695 28.3151C586.275 20.3617 591.219 13.9668 598.527 9.13024C605.836 4.18624 614.488 1.71423 624.483 1.71423C636.521 1.71423 646.463 5.15354 654.309 12.0322C662.37 18.8033 666.4 27.2941 666.4 37.5045C666.4 42.2336 665.379 46.6939 663.337 50.8856C661.295 55.0772 658.715 58.409 655.598 60.8811C649.257 65.8251 643.776 69.0494 639.154 70.5541L635.93 71.5214L634.963 81.3557H617.712L615.455 60.075C618.68 59.2151 622.173 58.0329 625.934 56.5282C629.374 55.131 632.437 53.68 635.124 52.1753C638.026 50.4557 640.498 48.2523 642.54 45.5654C644.582 42.771 645.603 40.0303 645.603 37.3433ZM616.906 115.856C614.542 113.492 613.359 110.482 613.359 106.828C613.359 103.174 614.542 100.164 616.906 97.7999C619.378 95.3279 622.441 94.0919 626.096 94.0919C629.75 94.0919 632.759 95.3279 635.124 97.7999C637.596 100.164 638.832 103.174 638.832 106.828C638.832 110.482 637.596 113.492 635.124 115.856C632.759 118.221 629.75 119.403 626.096 119.403C622.441 119.403 619.378 118.221 616.906 115.856Z" fill="#FBF6F4" />
+          <path d="M469.992 116.985V33.1516H489.983V60.0749H513.682C521.85 60.0749 528.782 62.8156 534.479 68.297C540.068 73.5635 542.862 80.3346 542.862 88.6104C542.862 96.6713 540.068 103.442 534.479 108.924C528.782 114.298 521.85 116.985 513.682 116.985H469.992ZM571.881 116.985H551.89V33.1516H571.881V116.985ZM514.327 79.2598H513.52H489.983V97.7998H513.52C515.885 97.7998 517.873 96.94 519.485 95.2203C521.205 93.3932 522.065 91.1899 522.065 88.6104C522.065 86.1384 521.313 84.0426 519.808 82.3229C518.411 80.4958 516.584 79.4748 514.327 79.2598Z" fill="#FBF6F4" />
+          <path d="M377.886 70.5541V116.985H357.895V33.1516H377.886L405.454 80.5496L432.861 33.1516H452.852V116.985H432.861V70.5541L411.581 107.312H399.167L377.886 70.5541Z" fill="#FBF6F4" />
+          <path d="M184.62 106.828C176.237 98.3373 172.046 87.7506 172.046 75.0682C172.046 62.3858 176.237 51.8529 184.62 43.4696C193.111 34.9788 203.698 30.7334 216.38 30.7334C229.063 30.7334 239.649 34.9788 248.14 43.4696C256.631 51.8529 260.876 62.3858 260.876 75.0682C260.876 87.7506 256.631 98.3373 248.14 106.828C239.542 115.211 228.955 119.403 216.38 119.403C203.805 119.403 193.219 115.211 184.62 106.828ZM216.38 50.8856C209.717 50.8856 204.128 53.1964 199.614 57.8179C195.1 62.4395 192.843 68.1896 192.843 75.0682C192.843 81.9468 195.1 87.6969 199.614 92.3185C204.128 96.94 209.717 99.2508 216.38 99.2508C223.044 99.2508 228.633 96.94 233.147 92.3185C237.661 87.6969 239.918 81.9468 239.918 75.0682C239.918 68.1896 237.661 62.4395 233.147 57.8179C228.633 53.1964 223.044 50.8856 216.38 50.8856Z" fill="#FBF6F4" />
+          <path d="M120.181 116.985V52.3365H92.2908V33.1516H167.902V52.3365H140.172V116.985H120.181Z" fill="#FBF6F4" />
+          <path d="M1 116.985V4.13257H22.6031V54.4324L65.1646 4.13257H92.5715L45.9797 59.269L95.7959 116.985H68.3889L22.6031 63.9443V116.985H1Z" fill="#FBF6F4" />
+        </svg>
       </div>
       <div class="about-us__item item-1">
         <p><?php echo get_field('text_1'); ?>  </p>
+        <p>Рекрутеры агентства использует инновационные методы, собственные критерии для оценки профессиональных и личностных черты претендентов. </p>
       </div>
       <div class="about-us__item item-2">
         <p><?php echo get_field('text_2'); ?>
+        <p>Сотрудничество с нашим кадровым агентством – способ поиска релевантных соискателей и найма персонала для всех открытых вакансии за короткий срок.</p>
         </p>
       </div>
     </div>
@@ -238,13 +245,16 @@ Template Post Type: page
       <p>В работе используем инновационные методы, собственные наработки, чтобы оценить профессиональные и личностные черты потенциального сотрудника. Поиск кандидатов осуществляем через обширную базу резюме. Дополнительно выполняем проверку каждого соискателя (наличие судимостей, задолженностей и т.д.), собираем обратную связь с предыдущих мест работы. Все эти этапы позволяют нам подбирать подходящих специалистов, которые станут эффективными работниками в компании.</p>
     </div>
   </div>
-  <div class="garanties">
+  <div class="about-us garanties">
     <div class="container">
       <div class="garanties__title">
         <h2>Гарантии</h2>
       </div>
-      <div class="garanties__item">
-        <p>HR-менеджеры сопровождают нового специалиста в течение испытательного срока. Помогаем ему быстро включиться в рабочие задачи, преодолеть возникающие сложности. Если по какой-то причине в течение двух месяцев трудовые отношения с нанятым сотрудником будут расторгнуты, то предоставим другого сотрудника, подходящего для данной должности, без вложения дополнительных средств с вашей стороныбесплатную замену.
+      <div class="about-us__item item-1">
+        <p>После решения кадрового вопроса рекрутеры сопровождают нового сотрудника в течение испытательного срока. Помогаем ему быстро включиться в рабочие задачи, преодолеть возникающие сложности.</p>
+      </div>
+      <div class="about-us__item item-2">
+        <p>Если по какой-то причине в течение двух месяцев трудовые отношения будут расторгнуты, то предоставим другого сотрудника, подходящего для данной должности, без вложения дополнительных средств с вашей стороны.</p>
         </p>
       </div>
     </div>
@@ -254,10 +264,36 @@ Template Post Type: page
   </div>
   <div class="main-page-vacancy-list">
     <div class="container">
-        <div class="main-page-vacancy-list__title">
-            <h2>Вакансии</h2>
+    <div class="main-page-vacancy-list__category">
+            <p>Категории</p>
+            <hr>
+            <ul>
+                <li class="category__button" data-id="55">
+                    <p>Все вакансии</p>
+                </li>
+                <li class="category__button" data-id="55">
+                    <p>TOP вакансии</p>
+                </li>
+                <li class="category__button" data-id="29">
+                    <p>Административный персонал</p>
+                </li>
+                <li class="category__button" data-id="60">
+                    <p>Аудиторы</p>
+                </li>
+                <li class="category__button" data-id="35">
+                    <p>Информационные технологии</p>
+                </li>
+                <li class="category__button active" data-id="37">
+                    <p>Маркетинг / Реклама</p>
+                </li>
+                <li class="category__button" data-id="40">
+                    <p>Продажи, обслуживание клиентов</p>
+                </li>
+                <li class="category__button" data-id="52">
+                    <p>Финансы, бухгалетрия</p>
+                </li>
+            </ul>
         </div>
-        <div class="underline-block"></div>
         <div class="main-page-vacancy-list__vacancy">
             <div class="vacancy__item" data-category="" style="display: none;">
                 <a class="item__title" href="#">
@@ -266,7 +302,7 @@ Template Post Type: page
                 <p>Кадровое агентство Кадр</p>
                 <p class="item__text"></p>
                 <p>Мы ищем специалиста по продажам на полный рабочий день в кадровое агентство «Кадр».</p>
-                <p></p>
+                <a href="#" class="vacancy-link">Подробнее <img src="<?= get_template_directory_uri(); ?>/image/contact_us.svg" alt="Графический элемент оранжевая стрелка"></a>
             </div>
 
             <div class="vacancy__item" data-category="29" style="display: none;">
@@ -277,7 +313,7 @@ Template Post Type: page
                 <p class="item__text"></p>
                 <p>Профессионально агентство «Кадр» осуществляет полный комплекс услуг по подбору и управлению кадрами,
                     включая HR-брендинг, консалтинг и другие смежные услуги.</p>
-                <p></p>
+                <a href="#" class="vacancy-link">Подробнее <img src="<?= get_template_directory_uri(); ?>/image/contact_us.svg" alt="Графический элемент оранжевая стрелка"></a>
             </div>
 
             <div class="vacancy__item" data-category="52" style="display: none;">
@@ -288,7 +324,7 @@ Template Post Type: page
                 <p class="item__text"></p>
                 <p>Бухгалтерская компания, которая занимает лидирующие позиции на рынке Беларуси в сфере бухгалтерского
                     учета, в связи с расширением штата находится в поисках Главного бухгалтера.</p>
-                <p></p>
+                <a href="#" class="vacancy-link">Подробнее <img src="<?= get_template_directory_uri(); ?>/image/contact_us.svg" alt="Графический элемент оранжевая стрелка"></a>
             </div>
 
             <div class="vacancy__item" data-category="40" style="display: none;">
@@ -301,7 +337,7 @@ Template Post Type: page
                 <p>Аутсорсинговая компания — лидером рынка бухгалтерских и юридических услуг находится в поисках
                     амбициозного и талантливого специалиста по работе с корпоративными клиентами / продажам! Работа
                     только с входящими звонками!</p>
-                <p></p>
+                <a href="#" class="vacancy-link">Подробнее <img src="<?= get_template_directory_uri(); ?>/image/contact_us.svg" alt="Графический элемент оранжевая стрелка"></a>
             </div>
 
             <div class="vacancy__item" data-category="60" style="display: none;">
@@ -312,7 +348,7 @@ Template Post Type: page
                 <p class="item__text"></p>
                 <p>Компания&nbsp;ООО “Аудиторские технологии”&nbsp;в поисках старшего аудитора/аудитора для проведения
                     независимых и объективных аудиторских проверок финансовой деятельности наших клиентов.</p>
-                <p></p>
+                <a href="#" class="vacancy-link">Подробнее <img src="<?= get_template_directory_uri(); ?>/image/contact_us.svg" alt="Графический элемент оранжевая стрелка"></a>
             </div>
 
             <div class="vacancy__item" data-category="52" style="display: none;">
@@ -323,8 +359,8 @@ Template Post Type: page
                 <p class="item__text"></p>
                 <p>Компания ООО “Аудиторские технологии” в поисках квалифицированного сотрудника для проведения
                     независимых и объективных аудиторских проверок финансовой деятельности наших клиентов.</p>
-                <p></p>
-            </div>
+                <a href="#" class="vacancy-link">Подробнее <img src="<?= get_template_directory_uri(); ?>/image/contact_us.svg" alt="Графический элемент оранжевая стрелка"></a>
+              </div>
 
             <div class="vacancy__item" data-category="40" style="display: none;">
                 <a class="item__title" href="#">
@@ -335,7 +371,7 @@ Template Post Type: page
                 <p>Аутсорсинговая компания — лидер рынка бухгалтерских и юридических услуг находится в поисках
                     амбициозного и талантливого специалиста по продажам / специалиста по работе с клиентами! Работа
                     только с входящими звонками!</p>
-                <p></p>
+                <a href="#" class="vacancy-link">Подробнее <img src="<?= get_template_directory_uri(); ?>/image/contact_us.svg" alt="Графический элемент оранжевая стрелка"></a>
             </div>
 
             <div class="vacancy__item" data-category="35" style="display: none;">
@@ -348,7 +384,7 @@ Template Post Type: page
                     Беларуси и России. Компания оказывает полный комплекс услуг по разработке, внедрению и сопровождению
                     программных решений клиентам из более чем 30 стран мира. Более 150 высококвалифицированных
                     ИТ-специалистов. Реализация ИТ-проектов различной сложности и масштаба.</p>
-                <p></p>
+                <a href="#" class="vacancy-link">Подробнее <img src="<?= get_template_directory_uri(); ?>/image/contact_us.svg" alt="Графический элемент оранжевая стрелка"></a>
             </div>
 
             <div class="vacancy__item" data-category="29" style="display: none;">
@@ -361,7 +397,7 @@ Template Post Type: page
                     Беларуси и России. Компания оказывает полный комплекс услуг по разработке, внедрению и сопровождению
                     программных решений клиентам из более чем 30 стран мира. Более 150 высококвалифицированных
                     ИТ-специалистов. Реализация ИТ-проектов различной сложности и масштаба.</p>
-                <p></p>
+                <a href="#" class="vacancy-link">Подробнее <img src="<?= get_template_directory_uri(); ?>/image/contact_us.svg" alt="Графический элемент оранжевая стрелка"></a>
             </div>
 
             <div class="vacancy__item" data-category="37" style="display: block;">
@@ -374,7 +410,7 @@ Template Post Type: page
                     Беларуси и России. Компания оказывает полный комплекс услуг по разработке, внедрению и сопровождению
                     программных решений клиентам из более чем 30 стран мира. Более 150 высококвалифицированных
                     ИТ-специалистов. Реализация ИТ-проектов различной сложности и масштаба.</p>
-                <p></p>
+                <a href="#" class="vacancy-link">Подробнее <img src="<?= get_template_directory_uri(); ?>/image/contact_us.svg" alt="Графический элемент оранжевая стрелка"></a>
             </div>
 
             <div class="vacancy__item" data-category="40" style="display: none;">
@@ -388,7 +424,7 @@ Template Post Type: page
                     занимаемся разработкой сайтов и веб-приложений, it-аутсорсингом и it-аутстаффингом. Мы строим
                     компанию с человеческим лицом и создаем одну из лучших команд, где сотрудники для нас — самая
                     большая ценность.</p>
-                <p></p>
+                <a href="#" class="vacancy-link">Подробнее <img src="<?= get_template_directory_uri(); ?>/image/contact_us.svg" alt="Графический элемент оранжевая стрелка"></a>
             </div>
 
             <div class="vacancy__item" data-category="37" style="display: block;">
@@ -400,7 +436,7 @@ Template Post Type: page
                 <p>Ищем маркетолога для работы над несколькими проектами. Задача — выстроить с маркетинг планы проектов,
                     контролировать и настраивать РК, продвижение сайтов и социальных сетей, анализировать эффективность
                     расходования рекламных бюджетов.</p>
-                <p></p>
+                <a href="#" class="vacancy-link">Подробнее <img src="<?= get_template_directory_uri(); ?>/image/contact_us.svg" alt="Графический элемент оранжевая стрелка"></a>
             </div>
 
             <div class="vacancy__item" data-category="29" style="display: none;">
@@ -414,7 +450,7 @@ Template Post Type: page
                     Беларуси и России. Компания оказывает полный комплекс услуг по разработке, внедрению и сопровождению
                     программных решений клиентам из более чем 30 стран мира. Более 150 высококвалифицированных
                     ИТ-специалистов. Реализация ИТ-проектов различной сложности и масштаба.</p>
-                <p></p>
+                <a href="#" class="vacancy-link">Подробнее <img src="<?= get_template_directory_uri(); ?>/image/contact_us.svg" alt="Графический элемент оранжевая стрелка"></a>
             </div>
 
             <div class="vacancy__item" data-category="35" style="display: none;">
@@ -424,7 +460,7 @@ Template Post Type: page
                 <p>BPM Cloud / Web Focus</p>
                 <p class="item__text"></p>
                 <p>Команда BPM CLOUD ищет SEO-специалиста в нашу команду.</p>
-                <p></p>
+                <a href="#" class="vacancy-link">Подробнее <img src="<?= get_template_directory_uri(); ?>/image/contact_us.svg" alt="Графический элемент оранжевая стрелка"></a>
             </div>
 
             <div class="vacancy__item" data-category="29" style="display: none;">
@@ -437,39 +473,11 @@ Template Post Type: page
                     разработки в Беларуси и России. Компания оказывает полный комплекс услуг по разработке, внедрению и
                     сопровождению программных решений клиентам. Есть как крупные заказчики, так и мелкие, кому
                     необходимо разработать сайт, лэндинг.</p>
-                <p></p>
+                <a href="#" class="vacancy-link">Подробнее <img src="<?= get_template_directory_uri(); ?>/image/contact_us.svg" alt="Графический элемент оранжевая стрелка"></a>
             </div>
         </div>
-        <div class="main-page-vacancy-list__category">
-            <p>Категории</p>
-            <hr>
-            <ul>
-                <li class="category__button" data-id="55">
-                    <p>Все вакансии</p>
-                </li>
-                <li class="category__button" data-id="29">
-                    <p>Административный персонал</p>
-                </li>
-                <li class="category__button" data-id="60">
-                    <p>Аудиторы</p>
-                </li>
-                <li class="category__button" data-id="35">
-                    <p>Информационные технологии</p>
-                </li>
-                <li class="category__button active" data-id="37">
-                    <p>Маркетинг, реклама, PR</p>
-                </li>
-                <li class="category__button" data-id="40">
-                    <p>Продажи, обслуживание клиентов</p>
-                </li>
-                <li class="category__button" data-id="52">
-                    <p>Финансы, бухгалтерия</p>
-                </li>
-            </ul>
-        </div>
         <div class="btn">
-            <button class="btn btn-position-aware popmake-29 pum-trigger" style="cursor: pointer;">КОНСУЛЬТАЦИЯ<span
-                    class="position-aware"></span></button>
+            <a hre="/vakansii/" class="btn btn-position-aware popmake-29 pum-trigger">Все вакансии</a>
         </div>
     </div>
 </div>
@@ -597,7 +605,7 @@ Template Post Type: page
           <p class="question-block__name">
             Ищете работу?
           </p>
-          <button class="question-block__button btn-position-aware btn-new popmake-1001 pum-trigger">
+          <button class="btn-position-aware btn-new popmake-1001 pum-trigger">
             Отправить резюме
             <span class="position-aware"></span>
           </button>
@@ -613,7 +621,7 @@ Template Post Type: page
           <p class="question-block__name">
             Нужен сотрудник?
           </p>
-          <button class="question-block__button btn-position-aware btn-new popmake-29 pum-trigger">
+          <button class="btn-position-aware btn-new popmake-29 pum-trigger">
             Оставьте заявку
             <span class="position-aware"></span>
           </button>
@@ -622,8 +630,8 @@ Template Post Type: page
     </div>
   </section>
   <div class="often-questions custom-block">
-    <div class="container-new">
-      <div class="often-questions__container pt-150 pb-150">
+    <div class="container">
+      <div class="often-questions__container">
         <div class="often-questions__title">
           <h2 class="title-line-new block">
             Часто задаваемые вопросы
@@ -631,7 +639,7 @@ Template Post Type: page
           <p>Специалисты Кадра собрали актуальные вопросы, с которыми приходилось
             сталкиваться на практике.
           </p>
-          <button class="btn btn-position-aware popmake-29">КОНСУЛЬТАЦИЯ<span class="position-aware"></span></button>
+          <button class="btn btn-position-aware popmake-29">Посмотреть все</button>
         </div>
         <div class="often-questions__blocks">
           <div class="often-questions__block">

@@ -20,7 +20,8 @@
           Кадровое агентство «Кадр»
         </div>
         <div class="promotion__subtitle">
-          <?php echo get_field('promotion-text'); ?>
+          Профессиональный поиск и подбор персонала
+          <!-- <ю?php echo get_field('promotion-text'); ?> -->
         </div>
       </div>
       <div class="promotion__right">
@@ -33,7 +34,7 @@
         <div class="promotion__txt">
           на второе сотрудничество!
         </div>
-        <button class="btn btn-position-aware popmake-2944">ВОСПОЛЬЗОВАТЬСЯ<span class="position-aware"></span></button>
+        <button class="btn btn-position-aware popmake-2944">Воспользоваться<span class="position-aware"></span></button>
       </div>
     </div>
   </div>

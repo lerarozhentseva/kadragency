@@ -1,4 +1,4 @@
-<section class="consult pb-110">
+<section class="consult">
   <div class="container">
     <div class="consult-wrapper flex">
       <div class="consult-image">

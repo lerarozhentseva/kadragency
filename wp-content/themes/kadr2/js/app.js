@@ -142,7 +142,13 @@ jQuery(document).ready(function($) {
       $('#pum-3186').css('opacity', '0');
     })
 
+    $('.main-page-vacancy-list__vacancy .vacancy__item').on('mouseenter', function() {
+      $(this).find('.vacancy-link').addClass('active');
+    });
 
+    $('.main-page-vacancy-list__vacancy .vacancy__item').on('mouseleave', function() {
+      $(this).find('.vacancy-link').removeClass('active');
+    });
 
     /*function replaceImage() {
 

@@ -1,10 +1,6 @@
 <div class="team">
   <div class="container">
-    <div class="team__title mobile">
-      <p class="title-line-new block">
-        <span>Наша команда</span>
-      </p>
-    </div>
+    <h2>Команда</h2>
     <div class="underline-block"></div>
     <div class="team__title">
       <p class='h2'>Команда</p>
