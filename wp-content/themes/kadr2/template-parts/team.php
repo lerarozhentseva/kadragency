@@ -75,7 +75,7 @@
     <div class="team-slider swiper-button-next">
       <img src="<?= get_template_directory_uri(); ?>/image/nav-vector.svg" alt="Векторный графический элемент">
     </div>
-    <a class="btn btn-position-aware" href="#">ВСЯ КОМАНДА<span
+    <a class="btn btn-position-aware" href="#">Вся команда<span
         class="position-aware"></span></a>
   </div>
 </div>

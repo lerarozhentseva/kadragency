@@ -150,6 +150,14 @@ jQuery(document).ready(function($) {
       $(this).find('.vacancy-link').removeClass('active');
     });
 
+    $('.news__item').on('mouseenter', function() {
+      $(this).find('.btn-contact-us-light').addClass('active');
+    });
+
+    $('.news__item').on('mouseleave', function() {
+      $(this).find('.btn-contact-us-light').removeClass('active');
+    });
+
     /*function replaceImage() {
 
       setInterval(() => {

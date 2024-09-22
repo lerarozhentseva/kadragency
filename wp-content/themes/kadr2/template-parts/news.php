@@ -49,47 +49,44 @@
             <p class="h2">Новости и статьи</p>
         </div>
         <div class="news__item">
-            <div class="item__img">
-                <img src="<?= get_template_directory_uri(); ?>/image/news/news_1.jpg" alt="">
-            </div>
             <div class="item__content">
                 <a class="item__title" href="#">
-                    <p>Как зарабатывать больше?</p>
+                    Как зарабатывать больше?
                 </a>
                 <p class="meta-data">29/12/2020</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et senectus amet elit, eleifend diam purus, pulvinar luctus. Integer bibendum in ultricies eleifend dui. Semper scelerisque quisque diam ac. Amet quam tellus...</p>
+                <a href="#" class="btn-contact-us-light popmake-29">Подробнее<img src="<?= get_template_directory_uri(); ?>/image/contact_us_light.svg" alt="Графический элемент стрелка вправо"></a>
+            </div>
+        </div>
+        <div class="news__item">
+            <div class="item__content">
+                <a class="item__title" href="#">
+                    Как зарабатывать больше?
+                </a>
+                <p class="meta-data">29/12/2020</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et senectus amet elit, eleifend diam purus, pulvinar luctus. Integer bibendum in ultricies eleifend dui. Semper scelerisque quisque diam ac. Amet quam tellus...</p>
+                <a href="#" class="btn-contact-us-light popmake-29">Подробнее<img src="<?= get_template_directory_uri(); ?>/image/contact_us_light.svg" alt="Графический элемент стрелка вправо"></a>
             </div>
 
         </div>
         <div class="news__item">
-            <div class="item__img">
-                <img src="<?= get_template_directory_uri(); ?>/image/news/news_2.jpg" alt="">
-            </div>
             <div class="item__content">
                 <a class="item__title" href="#">
-                    <p>Как зарабатывать больше?</p>
+                  Как зарабатывать больше?
                 </a>
                 <p class="meta-data">29/12/2020</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et senectus amet elit, eleifend diam purus, pulvinar luctus. Integer bibendum in ultricies eleifend dui. Semper scelerisque quisque diam ac. Amet quam tellus...</p>
-            </div>
-
-        </div>
-        <div class="news__item">
-            <div class="item__img">
-                <img src="<?= get_template_directory_uri(); ?>/image/news/news_3.jpg" alt="">
-            </div>
-            <div class="item__content">
-                <a class="item__title" href="#">
-                    <p>Как зарабатывать больше?</p>
-                </a>
-                <p class="meta-data">29/12/2020</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et senectus amet elit, eleifend diam purus, pulvinar luctus. Integer bibendum in ultricies eleifend dui. Semper scelerisque quisque diam ac. Amet quam tellus...</p>
-            </div>
-
+                <a href="#" class="btn-contact-us-light popmake-29">Подробнее<img src="<?= get_template_directory_uri(); ?>/image/contact_us_light.svg" alt="Графический элемент стрелка вправо"></a>
+             </div>
         </div>
         <div class="news__item more">
-            <p class="h3">Хотите больше интересных статей?</p>
-            <a class="btn btn-position-aware dark" href="#">ПОСМОТРЕТЬ БЛОГ<span class="position-aware"></span></a>
+            <div class="item-image">
+              <img src="<?= get_template_directory_uri(); ?>/image/news/news_4.jpg" alt="">
+            </div>
+            <div class="item__content">
+              <p class="h3">Хотите больше интересных статей?</p>
+              <a class="btn btn-position-aware" href="#">Посмотреть блог<span class="position-aware"></span></a>
+            </div>
         </div>
     </div>
 </div>

@@ -5,8 +5,5 @@
 ?>
 
 <?php get_header(); ?>
-        <?php the_content() ?>
-
-    11111
-
+<?php the_content() ?>
 <?php get_footer(); ?>
